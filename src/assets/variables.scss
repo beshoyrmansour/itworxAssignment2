@@ -1,0 +1,69 @@
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$blue:     #0073dd;
+$indigo:   #6610f2;
+$purple:   #6f42c1;
+$pink:     #e83e8c;
+$red:      #F63934;
+$orange:   #F69D33;
+$yellow:   #ffc107;
+$green:    #7DBC43;
+$teal:     #20c997;
+$cyan:     #17a2b8;
+
+// My Variables
+$e-bg-default: #ebebeb;
+$e-bg-light:   #f8f8f8;
+$e-blue:       #3186C7;
+$e-dark-blue:  #223D52;
+$e-active-blue:#2f87c7;
+$e-gold:       #c2b277;
+$theme-colors: (
+  primary:   $e-blue,
+  secondary: $gray-600,
+  success:   $green,
+  info:      $e-active-blue,
+  warning:   $orange,
+  danger:    $red,
+  light:     $e-bg-light,
+  dark:      $e-dark-blue
+);
+
+@font-face {
+    font-family: 'bukra';
+    font-style: normal;
+    src: url('assets/BukraFont/TTF/29ltbukraregular.ttf') format('truetype'),
+         url('assets/BukraFont/TTF/29ltbukrabolditalic.ttf') format('truetype'),
+         url('assets/BukraFont/TTF/29ltbukralight.ttf') format('truetype'),
+         url('assets/BukraFont/TTF/29ltbukraregular.ttf') format('truetype'),
+         url('assets/BukraFont/OTF/29ltbukraregular.otf') format('opentype'),
+         url('assets/BukraFont/OTF/29ltbukrabolditalic.otf') format('opentype'),
+         url('assets/BukraFont/OTF/29ltbukralight.otf') format('opentype'),
+         url('assets/BukraFont/OTF/29ltbukraregular.otf') format('opentype'),
+  }
+.b-t-default {
+    border-top: 1px solid #d6d6d6;
+}
+.b-b-default {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.b-r-default {
+    border-right: 1px solid #d6d6d6;
+}
+.b-l-default {
+    border-left: 1px solid #d6d6d6;
+}
+.card{
+    border-radius: 0px;
+}
+

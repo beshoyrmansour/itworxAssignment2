@@ -1,0 +1,82 @@
+  <div class="pt-3 pb-2 bd-callout bd-left bd-callout-warning row m-0 pl-2" style="height: 100%!important;">
+    <div class="col-lg-5 col-sm-12 px-3">
+      <p class="p-2 mt-2">{{name}}</p>
+      <div class="b-t-default p-2">
+        <div class="d-flex flex-row align-items-center">
+          <div class="p-2 ">
+            <fa name="user-circle" size="2x" class="text-muted"></fa>
+          </div>
+          <div class="p-2">
+            <div class="d-flex flex-column ">
+              <p class="e-title">المسؤول</p>
+              <p class="">{{owner}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-t-default p-2">
+        <div class="row">
+          <div class="col-6 d-flex flex-row align-items-center">
+            <div class="p-2 ">
+                <fa name="calendar-o" size="2x" class="text-muted"></fa>
+            </div>
+            <div class="p-2">
+              <div class="d-flex flex-column">
+                <p class="e-title">تاريخ البدء</p>
+                <p class="">{{startDate}}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 d-flex flex-row align-items-center b-r-default">
+            <div class="p-2 ">
+                <fa name="calendar-o" size="2x" class="text-muted"></fa>
+            </div>
+            <div class="p-2">
+              <div class="d-flex flex-column">
+                <p class="e-title">تاريخ الانتهاء</p>
+                <p class="">{{endDate}}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-7 col-sm-12 b-r-default p-0 pl-1 text-center">
+      <div class="d-flex flex-row text-center " style="min-height: 200px; min-width: 100px; max-width: 200px;">
+        <!-- <button (click)="add()">Add Point!</button> -->
+        <!-- <div [chart]="chart"></div> -->
+      </div>
+      <div class="d-flsex row flex-rows b-t-default pt-2 m-0">
+        <div class="col-3 p-0 ">
+          <p class="e-title">الفعلي السابق</p>
+          <h5 class="">{{oldActual}}</h5>
+        </div>
+
+        <div class="col-2 p-0 b-r-default">
+          <p class="e-title">الفعلي</p>
+          <h5 class="">{{achieved}}</h5>
+        </div>
+
+        <div class="col-2 p-0 b-r-default">
+          <p class="e-title">المستهدف</p>
+          <h5 class="">{{currentTarget}}</h5>
+        </div>
+
+        <div class="col-2 p-0 b-r-default">
+          <p class="e-title">النتيجة</p>
+          <h5 class="">{{((achieved / currentTarget) * 100 ).toFixed(2)}}% </h5>
+        </div>
+
+        <div class="col-3 p-0 b-r-default">
+          <p class="e-title">المستهدف التالي</p>
+          <h5 class="">{{nextTarget}}</h5>
+        </div>
+
+      </div>
+    </div>
+
+  </div>

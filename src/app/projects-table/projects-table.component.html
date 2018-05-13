@@ -1,0 +1,49 @@
+<div class="row m-0">
+  <ngb-tabset #tabContaine="ngbTabset" class="col-12 p-0">
+
+    <ngb-tab title="المخطط الزمني">
+      <ng-template ngbTabContent>
+        <!-- <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
+          blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth
+          letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic,
+          assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore
+          stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry
+          richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo
+          park.
+        </p> -->
+      </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="جدول الأبعاد">
+      <ng-template ngbTabContent>
+        <div class="table-responsive">
+          <table class="table table-bordered table-light">
+            <thead>
+              <tr>
+                <th class="e-title text-center">الأسم</th>
+                <th class="e-title text-center">الفعلي</th>
+                <th class="e-title text-center">المستهدف</th>
+                <th class="e-title text-center">النتيجة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-active" *ngFor="let area of areas">
+                <td>{{area.name}}</td>
+                <td class="text-center">{{area.achieved}}</td>
+                <td class="text-center">{{area.currentTarget}}</td>
+                <td class="text-center">{{((area.achieved / area.currentTarget) * 100 ).toFixed(2)}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="المعايير القياسيةی" id="tab-map">
+      <ng-template ngbTabContent>
+        <h1>3rd</h1>
+      </ng-template>
+    </ngb-tab>
+
+  </ngb-tabset>
+</div>

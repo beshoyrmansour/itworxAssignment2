@@ -1,1 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~font-awesome/css/font-awesome.css";
+
+
+/*  */
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    font-family: 'bukra',sans-serif;
+    background-color: $e-bg-default;
+}
+
+
+
+
+.e-title{
+    font-weight: bold;
+    color: $e-gold;
+}
+p{
+    font-size: .7rem;
+}
+
+.e-mx-1{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.full-height{height:100vh;}
+.Initiatives, .projects{
+
+    div {
+    &.warning:after{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 23px;
+    border-radius: 5px;
+    background:$orange;
+    }
+    &.success:after{
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 23px;
+        border-radius: 5px;
+        background:$green;
+    }
+    &.danger:after{
+        content: "";
+        display: inline-block;
+        display: inline-block;
+        width: 6px;
+        height: 23px;
+        border-radius: 5px;
+        background:$red;
+    }
+}
+}
+.pre-warning{
+    border-right: 13px solid;
+    padding-right: 1rem;
+    border-right-color: $orange;
+
+}
+.card{
+    padding: 0px;
+    border-radius: 0px;
+}
+agm-map {
+    height: 370px;
+  }
+  app-summary {
+      width: 100%;
+      // margin-left: 1rem;
+      border: 0px solid #eee;
+      border-radius: 0rem;
+      background-color: $white;
+      font-size: 1rem;
+      border-right-width: .25rem;
+      border-right-color: $orange;
+  }
+
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    border-color: $white;
+    border-bottom-color: $e-active-blue;
+    border-bottom-width: .4rem;
+}
+.nav-tabs .nav-link{
+          color: #5f616e;
+}
+.nav-tabs .nav-link.active{
+          color: #505364;
+          font-weight: bold;
+}
+.tab-pane{
+    min-height: 300px;
+}

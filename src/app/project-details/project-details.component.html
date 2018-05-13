@@ -1,0 +1,24 @@
+<div class="e-mx-1 bd-callout p-3">
+    <p class="">
+      <strong>المبادرات و المشاريع الداعمة</strong>
+    </p>
+    <div class="Initiatives">
+      <p class="text-muted">المبادرات</p>
+      <div class="row" *ngFor="let initiative of data.initiatives">
+        <div class="col-1" [ngClass]="{'danger': initiative.status===1,'warning': initiative.status===2,'success': initiative.status===3}"></div>
+        <div class="col-10 px-0">
+          <p>{{initiative.text}}</p>
+        </div>
+      </div>
+  
+    </div>
+    <div class="projects">
+      <p class="text-muted">المشاريع</p>
+      <div class="row" *ngFor="let project of data.projects">
+          <div class="col-1" [ngClass]="{'danger': project.status===1,'warning': project.status===2,'success': project.status===3}"></div>
+          <div class="col-10 px-0">
+            <p>{{project.text}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
